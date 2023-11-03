@@ -1,5 +1,5 @@
 .mainContainer {
-    background-color: var(--main-window-color);
+    background-color: rgba(64, 63, 63, 0.2);
     height: 55vh;
     display: flex;
     flex-direction: column;
@@ -8,18 +8,22 @@
     padding: 25px 40px;
     color: #eee;
     border-radius: 15px;
+    box-shadow: 0px 4px rgba(51, 51, 51, 0.2);
+    backdrop-filter: blur(10px);
 }
 
 .title {
     text-decoration: double;
+    margin-bottom: 30px;
 }
 
 .exchangeValue {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: space-between;
     gap: 7px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .exchangeConfig {
@@ -28,6 +32,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    width: 100%;
 }
 
 .exchangeConfig i {
@@ -55,5 +60,44 @@
 
 .response {
     margin: 15px 0;
-    font-size: 20px;
+    font-size: 15px;
+}
+
+.from, .to {
+    width: 100%;
+}
+
+.selectInput {
+    display: flex;
+    width: 100%;
+    border: 1px solid #999;
+    height: 40px;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 20px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.selectInput:hover {
+    border: 1px solid #eee;
+}
+
+.selectInput img {
+    max-width: 20px;
+}
+
+.selectInput select {
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    background: none;
+    margin: 0 -5px 0 5px;
+    color: #eee;
+    border: 0px;
+}
+
+.selectInput select option {
+    color: #000;
 }

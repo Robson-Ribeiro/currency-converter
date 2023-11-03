@@ -12,18 +12,24 @@
     <div class="mainContainer">
         <h2 class="title">Currency Converter</h2>
         <div class="exchangeValue">
-            <label>Value to be converted:</label>
+            <label>Value:</label>
             <input type="number"/>
         </div>
         <div class="exchangeConfig">
             <div class="from">
                 <p>From</p>
-                <input type="">
+                <div class="selectInput">
+                    <img src="https://flagcdn.com/48x36/br.png" />
+                    <select></select>
+                </div>
             </div>
             <i>⇅</i>
             <div class="to">
                 <p>To</p>
-                <input type="text">
+                <div class="selectInput">
+                    <img src="https://flagcdn.com/48x36/us.png" />
+                    <select></select>
+                </div>
             </div>
         </div>
         <div class="response">
@@ -32,6 +38,7 @@
         <button>Exchange</button>
     </div>
 
+    <script src="./assets/src/utils/countriesCurrency.js"></script>
     <script src="./assets/src/index.js" type="module"></script>
 </body>
 </html>
