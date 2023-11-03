@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
+
+body::before {
+    content: '';
+    height: 100px;
+    width: 100px;
+    background-color: #ff00dd;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    filter: blur(150px);
+}
+
+body::after {
+    content: '';
+    height: 120px;
+    width: 120px;
+    background-color: #00ccff;
+    position: absolute;
+    left: 90%;
+    top: 90%;
+    filter: blur(150px);
+}
+
+input {
+    cursor: pointer;
+    padding: 3px 7px;
+    border: 2px solid rgba(rgb(221, 41, 41), green, blue, 0.5);
+    outline: none;
+    background: none;
+    appearance: none;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+

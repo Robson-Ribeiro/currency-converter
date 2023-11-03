@@ -1,0 +1,59 @@
+.mainContainer {
+    background-color: var(--main-window-color);
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    color: #eee;
+    border-radius: 15px;
+}
+
+.title {
+    text-decoration: double;
+}
+
+.exchangeValue {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 7px;
+    margin-bottom: 25px;
+}
+
+.exchangeConfig {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.exchangeConfig i {
+    font-size: 27px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.exchangeConfig i:hover {
+    color: #a62cf7;
+}
+
+.from {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.to {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.response {
+    margin: 15px 0;
+    font-size: 20px;
+}
